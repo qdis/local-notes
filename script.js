@@ -35,7 +35,7 @@ function addNoteAction() {
             notes = JSON.parse(notes);
         }
 
-        notes.push(note);
+        notes.unshift(note);
         localStorage.setItem('notes', JSON.stringify(notes));
 
         renderUi();
