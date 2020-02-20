@@ -129,6 +129,8 @@ a:hover {
 
 .igroup label {
     margin-bottom: 8px;
+    font-size: 21px;
+    font-weight: bold;
 }
 
 .igroup input {
