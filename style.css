@@ -40,6 +40,10 @@ section .dialog {
     margin: 14px auto;
 }
 
+button {
+    cursor: pointer;
+}
+
 .main-btn {
     padding: 12px 24px;
     font-weight: bold;
@@ -146,24 +150,24 @@ input, textarea {
     font-size: 14px;
 }
 
-.note{
+.note {
     padding: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-img{
+img {
     color: rgb(188, 63, 60);
     cursor: pointer;
 }
 
-.note .title{
+.note .title {
     font-weight: bold;
     font-size: 22px;
 }
 
-.note .date{
+.note .date {
     font-size: 12px;
     padding-top: 4px;
     padding-bottom: 4px;

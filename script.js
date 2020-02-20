@@ -80,7 +80,10 @@ function renderUi() {
         notes.forEach((n, index) => {
             var div = document.createElement('div');
             div.className = 'note';
-            
+
+            var divNc = document.createElement('div');
+            divNc.className = 'note-content';
+
             var title = document.createElement('div');
             title.className = 'title';
             title.innerText = n.title;
