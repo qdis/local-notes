@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/eot/JetBrainsMono-Regular.eot') format('embedded-opentype'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(43, 43, 43);
+    color: rgb(184, 184, 184)
+}
+
+.done {
+    color: rgb(165, 194, 97);
+}
+
+section {
+    max-width: 1080px;
+    padding: 24px;
+}
+
+section .dialog {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.center-content {
+    margin: 14px auto;
+}
+
+.main-btn {
+    padding: 12px 24px;
+    font-weight: bold;
+    background: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    padding: 12px 24px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid rgb(203, 120, 50);
+    font-size: 17px;
+    cursor: pointer;
+    color: rgb(203, 120, 50);
+}
+
+.cancel-btn:hover {
+    color: rgba(203, 120, 50, 0.8);
+    border: 2px solid rgba(203, 120, 50, 0.8);
+}
+
+.error {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(188, 63, 60);
+}
+
+.main-btn:hover {
+    background: rgb(184, 184, 184);
+}
+
+.notes-and-tasks {
+    width: 100%;
+    display: flex;
+
+}
+
+.notes-and-tasks > div {
+    width: 100%;
+    padding: 12px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: rgb(203, 120, 50);
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.note-modal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgb(43, 43, 43);
+
+
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    color: white;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.igroup {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0px;
+}
+
+.igroup label {
+    margin-bottom: 8px;
+}
+
+.igroup input {
+    height: 30px;
+    width: 240px;
+}
+
+.igroup textarea {
+    width: 380px;
+}
+
+input, textarea {
+    font-size: 14px;
+}
+
+.note{
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    color: rgb(188, 63, 60);
+    cursor: pointer;
+}
+
+.note .title{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.note .date{
+    font-size: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}

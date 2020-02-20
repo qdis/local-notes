@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+
+    <meta charset="utf-8"/>
+    <title>Local Notes</title>
+    <base href="/"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#1976d2"/>
+    <meta name="description" content="Notes"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<section class="center-content">
+    <h1>Local Notes</h1>
+    <p>Local notes allows you to write up notes in your browser. Date is stored locally the browsers
+        storage.</p>
+
+    <div class="notes-and-tasks">
+        <div class="your-notes">
+            <div class="header">
+                <h3>Notes</h3>
+                <div class="new-note-standard">
+                    <button class="main-btn" onclick="addNote()">Add Note</button>
+                </div>
+            </div>
+            <div class="new-note-empty">
+                <p>You have no notes yet, click <a onclick="addNote()">here</a> to add a new note</p>
+            </div>
+            <div class="notes">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="note-modal">
+        <div class="close" onclick="closeModal()">
+            x
+        </div>
+        <section class="dialog">
+            <h2>Add a new note:</h2>
+            <div class="igroup">
+                <label for="note-title">Title</label>
+                <input id="note-title">
+            </div>
+
+            <div class="igroup">
+                <label for="note-content">Content</label>
+                <textarea id="note-content" rows="4"></textarea>
+            </div>
+            <br>
+            <div class="error" id="error">
+                Title & Content are mandatory!
+            </div>
+            <br>
+            <div class="actions">
+                <button class="main-btn" onclick="addNoteAction()">Add Note</button>
+                <button onclick="closeModal()" class="cancel-btn">Cancel</button>
+            </div>
+        </section>
+    </div>
+
+
+</section>
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
