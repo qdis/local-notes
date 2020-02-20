@@ -77,7 +77,7 @@ function renderUi() {
     } else {
         document.querySelector('.new-note-empty').style.display = 'none';
 
-        notes.forEach((n, index) => {
+        notes.forEach(function(n, index) {
             var div = document.createElement('div');
             div.className = 'note';
 
